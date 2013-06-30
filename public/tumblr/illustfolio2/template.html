@@ -23,7 +23,6 @@
   <meta name="text:Template CDN" content="//sanographix.github.io/public/tumblr/illustfolio2">
   <meta name="text:Disqus Shortname" content="">
   <meta name="if:Show Exif" content="1">
-  <meta name="image:Background" content="">
   <meta name="font:Font" content="">
 
   <title>{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
@@ -73,13 +72,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="{text:Template CDN}/css/style.css" charset="utf-8">
   <style>
     body {
-      background-image: url('{image:Background}');
       font-family: {font:Font};
-    }
-    @media (-webkit-min-device-pixel-ratio: 2) {
-        body {
-            background-image: url('{image:Background}');
-        }
     }
     {CustomCSS}
   </style>
@@ -289,10 +282,10 @@
           {block:PermalinkPagination}
             <div class="btn-group">
               {block:PreviousPost}
-                <a href="{PreviousPost}" class="btn"><i class="icon-double-angle-left"></i> Prev</a>
+                <a href="{PreviousPost}" class="btn"><i class="icon-chevron-left"></i> Prev</a>
               {/block:PreviousPost}
               {block:NextPost}
-                <a href="{NextPost}" class="next btn" rel="next">Next <i class="icon-double-angle-right"></i></a>
+                <a href="{NextPost}" class="next btn" rel="next">Next <i class="icon-chevron-right"></i></a>
               {/block:NextPost}
             </div>
           {/block:PermalinkPagination}
@@ -486,7 +479,9 @@
             <img src="{PortraitURL-128}" class="user-icon">
             <div class="card-section">
               <h2 class="user-name">
-                <a href="/">{text:Your Name}</a>
+                <a href="/">
+                  <i class="icon-user"></i> {text:Your Name}
+                </a>
               </h2>
               <div class="user-findme">
                 <ul>
@@ -523,7 +518,7 @@
                    <i class="icon-retweet"></i> Reblogged from
                 </span>
                 <a href="{ReblogParentURL}" class="user-name">
-                  {ReblogParentName}
+                  <i class="icon-user"></i> {ReblogParentName}
                 </a>
               </div>
               <div class="card-section original">
@@ -534,7 +529,7 @@
                    Originally posted by
                 </span>
                 <a href="{ReblogRootURL}"  class="user-name">
-                  {ReblogRootName}
+                  <i class="icon-user"></i> {ReblogRootName}
                 </a>
               </div>
             </div>
