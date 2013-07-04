@@ -265,13 +265,13 @@
       {block:Pagination}
         <div id="pager">
           {block:PreviousPage}
-            <a href="{PreviousPage}" class="btn">Prev</a>
+            <a href="{PreviousPage}" class="btn"><i class="icon-angle-left"></i> Prev</a>
           {/block:PreviousPage}
           <span class="number">
             {CurrentPage}/{TotalPages}
           </span>
           {block:NextPage}
-            <a href="{NextPage}" class="next btn" rel="next">Next</a>
+            <a href="{NextPage}" class="next btn" rel="next">Next <i class="icon-angle-right"></i></a>
           {/block:NextPage}
         </div>
       {/block:Pagination}
@@ -282,10 +282,10 @@
           {block:PermalinkPagination}
             <div class="btn-group">
               {block:PreviousPost}
-                <a href="{PreviousPost}" class="btn"><i class="icon-chevron-left"></i> Prev</a>
+                <a href="{PreviousPost}" class="btn"><i class="icon-angle-left"></i> Prev</a>
               {/block:PreviousPost}
               {block:NextPost}
-                <a href="{NextPost}" class="next btn" rel="next">Next <i class="icon-chevron-right"></i></a>
+                <a href="{NextPost}" class="next btn" rel="next">Next <i class="icon-angle-right"></i></a>
               {/block:NextPost}
             </div>
           {/block:PermalinkPagination}
