@@ -6,6 +6,7 @@
 @import "lesshat.less";
 @import "helpers.less";
 @import "variable.less";
+
 @import "button.less";
 @import "font-awesome/font-awesome.less";
 
@@ -112,8 +113,8 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0;
     list-style: none;
 
-    &.pull-right {
-        float: right;
+    &.subitems {
+        margin-left: 30px;
         font-size: 95%;
     }
 
@@ -164,16 +165,6 @@ h1,h2,h3,h4,h5,h6 {
         z-index: 3;
         padding: 10px 0 15px 0;
 
-        &:after {
-            content: '';
-            position: absolute;
-            border-bottom: 15px solid #333;
-            border-right: 15px solid transparent;
-            border-left: 15px solid transparent;
-            top: -14px;
-            right: 10px;
-        }
-
         &:before {
             content: '';
             position: absolute;
@@ -181,9 +172,8 @@ h1,h2,h3,h4,h5,h6 {
             border-right: 15px solid transparent;
             border-left: 15px solid transparent;
             top: -14px;
-            right: 10px;
+            left: 180px;
         }
-
     }
 
     h3 {

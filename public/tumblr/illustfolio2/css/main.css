@@ -487,15 +487,14 @@ h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:h
 #header .header-inner:after{clear:both}
 #header a{color:#777}#header a:hover{color:#454545}
 #header .blog-title{margin:0;font-size:140%;line-height:20px}#header .blog-title a{color:#454545}
-.header-nav{float:left;margin:0;padding:0;list-style:none}.header-nav.pull-right{float:right;font-size:95%}
+.header-nav{float:left;margin:0;padding:0;list-style:none}.header-nav.subitems{margin-left:30px;font-size:95%}
 .header-nav>li{float:left;line-height:20px}
 .header-nav a{display:block;padding:10px 15px 10px;text-decoration:none}
 .header-nav li:first-child a{padding-left:0}
 .header-nav li:last-child a{padding-right:0}
 .mobile-nav-panel{display:none}
 .tag-list{background:#333 url(../images/pageslide-bg.png) repeat;color:#fff;-webkit-box-shadow:inset 0 5px 10px #333;-moz-box-shadow:inset 0 5px 10px #333;box-shadow:inset 0 5px 10px #333;color:inset 0 5px 10px #333;text-shadow:0 1px 0 rgba(0,0,0,0.5);display:none}.tag-list a{color:#fff;text-decoration:none}.tag-list a:hover{color:#999}
-.tag-list .container{margin-top:0;position:relative;z-index:3;padding:10px 0 15px 0}.tag-list .container:after{content:'';position:absolute;border-bottom:15px solid #333;border-right:15px solid transparent;border-left:15px solid transparent;top:-14px;right:10px}
-.tag-list .container:before{content:'';position:absolute;border-bottom:15px solid #333;border-right:15px solid transparent;border-left:15px solid transparent;top:-14px;right:10px}
+.tag-list .container{margin-top:0;position:relative;z-index:3;padding:10px 0 15px 0}.tag-list .container:before{content:'';position:absolute;border-bottom:15px solid #333;border-right:15px solid transparent;border-left:15px solid transparent;top:-14px;left:180px}
 .tag-list h3{margin:0 0 10px 0}
 .tag-list .tagCloud{margin:0;padding:0;*zoom:1;*zoom:1}.tag-list .tagCloud:before,.tag-list .tagCloud:after{content:" ";display:table;}
 .tag-list .tagCloud:after{clear:both}
