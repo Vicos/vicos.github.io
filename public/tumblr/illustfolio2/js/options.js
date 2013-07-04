@@ -23,7 +23,7 @@ $(function () {
   });
 
   $(".header-tags a").click(function () {
-    $(".tag-list").toggle();
+    $(".tag-list").toggleClass("opened");
     return false;
   });
 
